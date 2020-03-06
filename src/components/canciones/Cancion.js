@@ -276,7 +276,7 @@ class CancionAction extends Component {
                         loading:false,
                         mensajealerta: true,
                         tituloM: 'Menu Unir Pistas',
-                        cuerpoM: 'Ocurrio un Problema Verifique.',
+                        cuerpoM: 'Ocurrio un Problema 11Verifique.',
                     })             
                 }  
             })
@@ -333,7 +333,7 @@ class CancionAction extends Component {
           this.setState({
             mensajealerta: true,
             tituloM: 'Menu Unir Pistas',
-            cuerpoM: 'Ocurrio un Problema Verifique.',
+            cuerpoM: 'Ocurrio un Problema 22Verifique.',
           })       
         }  
       })
@@ -349,11 +349,11 @@ class CancionAction extends Component {
             this.setState({  
               evolucionOn:false,
               ifechaevo: [],
-            //   mensajealerta: true,
-            //   tituloM: 'Menu Unir Sonido',
-            //   cuerpoM: 'Se elimino con exito el sonido.',
+              mensajealerta: true,
+              tituloM: 'Menu Unir Sonido',
+              cuerpoM: 'Se elimino con exito el sonido.',
             });
-            this.Consultar()
+            this.spineractivar('consul')
           }
         })
       }
@@ -572,8 +572,8 @@ class CancionAction extends Component {
                                         <table className="evotabla2gra">
                                             <tbody className="evocuerpo1">
                                                 {this.state.ifechaevo.map((item, i)=>{
-                                                    return<tr className={i%2 === 0 ? "odd" : ""} key={item.variable1} onClick={this.spineractivar.bind(this,"tabla",item.variable1)}><td width="130px" key={item.variable1} >{item.variable2}</td>
-                                                    <td>{item.variable3}</td>
+                                                    return<tr className={i%2 === 0 ? "odd" : ""} key={item.variable1} ><td width="130px" onClick={this.spineractivar.bind(this,"tabla",item.variable1)}  key={item.variable1} >{item.variable2}</td>
+                                                    <td key={item.variable1}  onClick={this.spineractivar.bind(this,"tabla",item.variable1)}>{item.variable3}</td>
                                                     <td width="20px" ><span className='cerrarca' onClick={this.eliminar.bind(this,item.variable1)}></span></td></tr>                                    
                                                 })}
                                             </tbody>
