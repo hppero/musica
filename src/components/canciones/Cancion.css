@@ -59,9 +59,9 @@
     caption-side: top;
   }
   .sound-wave{
-      margin-top: 15px;
+      margin-top: 1px;
       width: 250px;
-      height: 40px;
+      height: 15px;
   }
   .recButtonOn {
     background-color: #0deb44;
@@ -132,13 +132,20 @@
     margin-left: 30px;  
 }
 .segundos{
+    visibility: hidden;
     background-position: center;
     color: #48e120 !important;
-    font-size: 20px !important;
+    font-size: 10px !important;
+    padding: 0px;
+    margin: 0px;
+
 }
-.output{
-    width: 400px;
+
+.out0, .out1, .out2, .out3{
+    visibility: hidden;
+    display: none;
 }
+
 .output1{
     width: 250px;
     margin-top: 5px;
@@ -268,3 +275,4 @@ margin-bottom: 15px;
     cursor: pointer;
     margin-top: 2px;
   }
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- <div class="contenedor1" id="p1">
+        <div class="p1img1"><img src="img/p1_img1.png"></div>
+        <div class="p1img2"><img src="img/p1_img2.png"></div>
+        <div class="p1inicio">
+            <img class="btn" src="img/p1_img5.png">
+            <form id="form">
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico" aria-describedby="emailHelp" required="required">
+                </div>
+            </form>
+            <img class="btn" src="img/p1_img4.png" id="sig1">
+        </div>
+    </div> -->
+    <!-- <div class="contenedor2" id="p2">
+        <div class="p2img1"><img src="img/p2_img1.png"></div>
+        <div class="p2img2"><img src="img/p2_img2.png"></div>
+        <div class="p2info">
+            <img class="titulo" src="img/p2_img3.png">
+            <div class="linea">
+                <div class="btn"><img src="img/p2_1.png"></div>
+                <div class="btn"><img src="img/p2_2.png"></div>
+                <div class="btn"><img src="img/p2_3.png"></div>
+                <div class="btn"><img src="img/p2_4.png"></div>
+                <div class="btn"><img src="img/p2_5.png"></div>
+            </div>
+            <div class="linea">
+                <audio class="output" id="output" controls="" src="AUDIO5.mp3"></audio>
+            </div>
+            <img class="sig" src="img/p2_sig.png" id="sig2">
+        </div>
+    </div> -->
+    <!-- <div class="contenedor3" id="p3">
+        <div class="p3img1"><img src="img/p3_img1.png"></div>
+        <div class="p3img2"><img src="img/p3_img2.png"></div>
+        <div class="p3info">
+            <img class="titulo" src="img/p3_img3.png">
+            <div class="linea">
+                <div class="btn"><img src="img/btn_record.png"></div>
+                <div class="btn"><img src="img/btn_stop.png"></div>
+                <div class="btn"><img src="img/btn_delete.png"></div>
+            </div>
+            <div class="linea">
+                <audio class="output" id="output" controls="" src="AUDIO5.mp3"></audio>
+            </div>
+            <img class="sig" src="img/p3_sig.png" id="sig3">
+        </div>
+    </div> -->
+    <!-- <div class="contenedor4" id="p4">
+        <div class="p4img1"><img src="img/p4_img1.png"></div>
+        <div class="p4img2"><img src="img/p4_img2.png"></div>
+        <div class="p4info">
+            <img class="titulo" src="img/p4_img3.png">
+            <div class="linea">
+                <div class="btn"><img src="img/btn_record.png"></div>
+                <div class="btn"><img src="img/btn_stop.png"></div>
+                <div class="btn"><img src="img/btn_delete.png"></div>
+            </div>
+            <div class="linea">
+                <audio class="output" id="output" controls="" src="AUDIO5.mp3"></audio>
+            </div>
+            <img class="sig" src="img/p4_sig.png" id="sig4">
+        </div>
+    </div> -->
+    <div class="contenedor5" id="p5">
+        <div class="p5img1"><img src="img/p5_img1.png"></div>
+        <div class="p5img2"><img src="img/p5_img2.png"></div>
+        <div class="p5info">
+            <img class="titulo" src="img/p5_img3.png">
+            <div class="linea">
+                <div class="btn"><img src="img/btn_record.png"></div>
+                <div class="btn"><img src="img/btn_stop.png"></div>
+                <div class="btn"><img src="img/btn_delete.png"></div>
+            </div>
+            <div class="linea">
+                <audio class="output" id="output" controls="" src="AUDIO5.mp3"></audio>
+            </div>
+            <img class="sig" src="img/p5_sig.png" id="sig5">
+        </div>
+    </div>
+    <div class="contenedor6" id="p6">
+        <div class="p6info">
+            <img class="titulo" src="img/p6_img1.png">
+            <div class="linea">
+                <audio class="output" id="output" controls="" src="AUDIO5.mp3"></audio>
+            </div>
+            <img class="sig" src="img/p6_sig.png" id="sig6">
+        </div>
+    </div>
+</body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="jquery.min.js"></script>
+<script>
+$("#sig1").on("click",function(){
+    $("#form").submit();
+});
+
+$("#form").on("submit",function(){
+    $("#p1").fadeOut();
+    $("#p2").fadeIn();
+    return false;
+});
+
+$("#sig2").on("click",function(){
+    $("#p2").fadeOut();
+    $("#p3").fadeIn();
+});
+
+$("#sig3").on("click",function(){
+    $("#p3").fadeOut();
+    $("#p4").fadeIn();
+});
+
+$("#sig4").on("click",function(){
+    $("#p4").fadeOut();
+    $("#p5").fadeIn();
+});
+
+$("#sig5").on("click",function(){
+    $("#p5").fadeOut();
+    $("#p6").fadeIn();
+});
+
+$("#sig6").on("click",function(){
+    $("#p6").fadeOut();
+    $("#p1").fadeIn();
+});
+
+$("#p2").hide();
+$("#p3").hide();
+$("#p4").hide();
+$("#p5").hide();
+$("#p6").hide();
+
+
+</script>
+</html>
