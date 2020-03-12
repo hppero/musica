@@ -375,12 +375,12 @@ class CancionAction extends Component {
       pista = "Cancion5";
     }
 
-    var a = document.createElement("a");
-    document.body.appendChild(a);
-    a.style = "display: none";
-    a.href = this.state.blobURL1;
-    a.download = "test.mp3";
-    a.click();
+    // var a = document.createElement("a");
+    // document.body.appendChild(a);
+    // a.style = "display: none";
+    // a.href = this.state.blobURL1;
+    // a.download = "test.mp3";
+    // a.click();
 
     // var a = document.createElement("a");
     // document.body.appendChild(a);
